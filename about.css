@@ -18,11 +18,16 @@ body {
   position: relative;
 }
 
+.nav{
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
 /* logo + hamburger together */
 .header-left {
   display: flex;
   align-items: center;
-  gap: 350px;
+  gap: 150px;
 }
 
 #logo{
@@ -85,7 +90,7 @@ border-radius: 50%;
  
   display: flex;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
  
   margin-right: 100px;
 }
@@ -99,7 +104,7 @@ border-radius: 50%;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
-  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #fff;
   color: #EE1E7E;
 }
