@@ -9,7 +9,7 @@ body {
   color: #333;
   line-height: 1.7;
   font-family: 'Poppins', sans-serif;
-
+overflow-x: hidden;
 }
 .header {
   display: flex;
@@ -772,9 +772,9 @@ text-decoration: underline;
   color: #a855f7; /* WFE purple */
 }
 
-/* ===============================
+/* 
    RESPONSIVE DESIGN
-================================ */
+ */
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -907,6 +907,12 @@ text-decoration: underline;
     text-align: center;
   }
 
+  .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
   .footer-links {
     flex-direction: column;
     gap: 10px;
@@ -932,6 +938,10 @@ text-decoration: underline;
   .section-light {
     padding: 40px 20px;
   }
+   .cards-grid {
+    grid-template-columns: 1fr; 
+    justify-content: center;
+  }
 
   .approach-section h2 {
     font-size: 28px;
@@ -944,5 +954,20 @@ text-decoration: underline;
   .subscribe-text h2 {
     font-size: 1.3rem;
   }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .mission-about img{
+     max-width: 100%;
+
+  }
 }
+
+
+
+
+
+
 
