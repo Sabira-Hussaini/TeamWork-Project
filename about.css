@@ -8,6 +8,8 @@
 body {
   color: #333;
   line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+
 }
 .header {
   display: flex;
@@ -338,11 +340,13 @@ border-radius: 50%;
 
 .donor-links {
   margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .donor-links a {
   display: inline-block;
-  margin-right: 15px;
   padding: 8px 14px;
   background-color: #7b3fe4;
   color: white;
@@ -355,12 +359,26 @@ border-radius: 50%;
   background-color: #EE1E7E;
 }
 
-.donor-links .btn{
+.donor-links .btn {
   padding: 8px 14px;
   border: 2px solid black;
   border-radius: 4px;
+  background: transparent;
   transition: background-color 0.2s;
 }
+
+/* 📱 Mobile adjustment */
+@media (max-width: 600px) {
+  .donor-links {
+    justify-content: center;
+  }
+
+  .donor-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 .donor-years {
   margin-top: 20px;
@@ -431,12 +449,15 @@ text-decoration: underline;
   margin-bottom: 30px;
  
 }
-
-.link-item h3 {
-  font-size: 1.2rem;
+.link-item .new-tab{
+  text-decoration: none;
+   color: #333;
+     font-size: 1.4rem;
   margin-bottom: 10px;
   color: #333;
 }
+
+
 
 .social-links a {
   color: #7b3fe4;
@@ -458,7 +479,7 @@ text-decoration: underline;
 
 
 .team-section {
-  background-color: #f3e8ff;
+  background-color:  #ebe6e6e1;
   text-align: center;
   padding: 80px 20px;
 }
@@ -844,8 +865,11 @@ text-decoration: underline;
   }
 
   .cards-grid {
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
   .donors-section {
     padding: 20px;
