@@ -1018,3 +1018,14 @@ text-decoration: underline;
 
 
 
+
+.custom-navbar {
+  background: #fff;
+  padding: 18px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.navbar-logo {height: 68px;}
+.nav-link {color: #222 !important; font-weight: 500;}
+.nav-link:hover, .nav-link.active {color: #EE1E7E !important;}
+.btn-donate {background: #EE1E7E; color: #fff !important; padding: 8px 18px; border-radius: 4px; font-weight: 600;}
+.btn-donate:hover {background: #d81b6c;}
