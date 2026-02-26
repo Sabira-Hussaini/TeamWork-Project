@@ -20,35 +20,8 @@
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
-  <!-- <header class="header">
-  <div class="header-left">
-    <img id="logo" src="images/logo.jpeg" alt="WFE Logo">
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
-  <nav class="nav">
-    <div class="link">
-      <a href="#">Learn</a>
-      <a href="#">Teach</a>
-      <a href="#">Districts</a>
-      <a href="#">Stats</a>
-      <a href="#">Incubator</a>
-      <a href="#">About</a>
-    </div>
-
-    <div class="Btns">
-      <button class="btn">New Projects +</button>
-      <button class="btn">Sign in</button>
-      <button class="btn">Create account</button>
-    </div>
-  </nav>
-</header> -->
- <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -64,8 +37,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="/about/index.html" data-bs-toggle="dropdown">About Us</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#mission">Mission</a></li>
-              <li><a class="dropdown-item" href="#team">Team</a></li>
+              <li><a class="dropdown-item" href="#">Mission</a></li>
+              <li><a class="dropdown-item" href="/team/index.html">Team</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -76,7 +49,7 @@
               <li><a class="dropdown-item" href="#">Life Skills</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="/story/index.html">Stories</a></li>
           <li class="nav-item"><a class="nav-link btn btn-donate ms-lg-3" href="#">Donate</a></li>
         </ul>
       </div>
@@ -221,37 +194,77 @@ support from individuals, partners, and organizations who<br>
   </div>
 
   </section>
-  <section class="grid-layout">
-    <h1>Our Ongoing Comitment</h1>
+<section class="commitment-section">
+  <h1 class="section-title">Our Ongoing Commitment</h1>
 
-    <div class="cards-grid">
-  <div class="card">
-    <h3>Open and Accessible Education</h3>
-    <p>WFE is committed to providing free and open educational resources that are designed to be shared, adapted, and improved. Our learning materials are openly licensed, allowing educators and community organizations to use, customize, and remix them for non-commercial purposes. We believe that every learner and educator deserves access to high-quality foundational education, and that open resources remain central to expanding opportunities and empowering communities globally.</p>
-  </div>
-  <div class="card">
-    <h3>Unifying, Nonpartisan Approach</h3>
-    <p>WFE brings people together across cultural, social, and geographic differences to advance education and empowerment. We collaborate with educators, community leaders, institutions, and partners from diverse backgrounds, without political or ideological alignment. Our focus remains on what unites us: creating equal opportunities, fostering collaboration, and preparing individuals for a stronger, more hopeful future.</p>
-  </div>
-  <div class="card">
-    <h3>Accessibility</h3>
-    <p>WFE designs its programs and learning resources with accessibility at the core, ensuring that everyone can participate fully in education and skill development. We continuously work to identify and remove barriers that limit access for individuals with disabilities or underserved groups, so every learner can engage meaningfully and confidently. Accessibility is not just a feature—it is a principle that guides everything we do.</p>
-  </div>
-  <div class="card">
-    <h3>Teaching Ethics Without Editorial Bias</h3>
-    <p>WFE supports learners in exploring the ethical and social dimensions of education, technology, and innovation without promoting specific political or moral viewpoints. Our materials encourage open inquiry, critical thinking, and respectful discussion, empowering individuals to form their own informed perspectives. By cultivating ethical awareness without editorial bias, we help learners make thoughtful decisions and become responsible contributors to society.</p>
-  </div>
-  <div class="card">
-    <h3>Student Privacy</h3>
-    <p>WFE is deeply committed to protecting learner privacy. We collect only the data necessary to support learning, never share or sell personal information, and design all tools to meet the highest privacy and security standards. Every learner deserves a safe and trusted environment where their information is used solely to enhance education, ensure effective learning outcomes, and foster confidence in digital programs.</p>
-  </div>
-  <div class="card">
-    <h3>Student-First Technology Platform</h3>
-    <p>WFE partners with a variety of organizations to deliver educational programs while keeping learners at the center of all technology decisions. Our platform is non-commercial, ad-free, and designed to enhance learning rather than create competition. Educators have flexible tools and multiple options to support diverse learners, ensuring broad access, inclusivity, and a collaborative ecosystem that prioritizes student experience above all.</p>
-  </div>
-</div>
+  <div class="commitment-grid">
 
-  </section>
+    <div class="commitment-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Open Education">
+      </div>
+      <div class="card-content">
+        <h3>Open & Accessible Education</h3>
+        <p>
+          We provide freely accessible learning resources designed to be shared, adapted,
+          and continuously improved. Our open educational model ensures every learner
+          can access high-quality foundational education without financial or institutional
+          barriers. By promoting open knowledge, we empower communities to learn, grow,
+          and contribute to a more informed and equitable society.
+        </p>
+      </div>
+    </div>
+
+    <div class="commitment-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Inclusive Collaboration">
+      </div>
+      <div class="card-content">
+        <h3>Inclusive & Nonpartisan Collaboration</h3>
+        <p>
+          We unite educators, communities, and institutions across cultures, regions,
+          and perspectives. Our focus remains on equal opportunity, respectful dialogue,
+          and meaningful cooperation. By encouraging collaboration without political
+          or ideological bias, we help build a stronger, more connected educational
+          future for learners everywhere.
+        </p>
+      </div>
+    </div>
+
+    <div class="commitment-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Accessibility">
+      </div>
+      <div class="card-content">
+        <h3>Accessibility First</h3>
+        <p>
+          Every program is thoughtfully designed to remove barriers and ensure full
+          participation. We prioritize inclusive design principles, digital accessibility,
+          and adaptable learning formats so learners of all backgrounds and abilities
+          can engage confidently and effectively. Our commitment ensures no one is left
+          behind in the pursuit of knowledge.
+        </p>
+      </div>
+    </div>
+
+    <div class="commitment-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Student Privacy">
+      </div>
+      <div class="card-content">
+        <h3>Student Privacy & Trust</h3>
+        <p>
+          We protect learner data with strict privacy standards and transparent policies.
+          Our platform is secure, ad-free, and built solely to support meaningful educational
+          growth. By safeguarding personal information and maintaining ethical data practices,
+          we create a trusted environment where students can focus on learning with confidence.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <section class="donors-section">
   <h2>Our Generous Donors</h2>
@@ -265,16 +278,7 @@ support from individuals, partners, and organizations who<br>
     
   </div>
   <hr>
- <p>IRS Form 990</p>
-  <div class="donor-years">
-    <span>2018</span>
-    <span>2019</span>
-    <span>2020</span>
-    <span>2021</span>
-    <span>2022</span>
-    <span>2023</span>
-    <span>2024</span>
-  </div>
+
 </section>
 
 <section class="spread-word">
@@ -522,7 +526,7 @@ function toggleMenu() {
   document.querySelector(".nav").classList.toggle("active");
 }
 </script>
-<!-- ✅ Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- AOS JS -->

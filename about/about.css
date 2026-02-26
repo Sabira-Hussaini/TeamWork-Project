@@ -25,7 +25,7 @@ overflow-x: hidden;
   gap: 30px;
   margin-top: 20px;
 }
-/* logo + hamburger together */
+
 .header-left {
   display: flex;
   align-items: center;
@@ -115,8 +115,9 @@ border-radius: 50%;
 
 /* Hero */
 .about-hero {
-  background: #1f2933;
-  color: white;
+  background: #fff;
+  box-shadow: 2px 2px 3px #1e293b;
+  color: black;
   padding: 80px 20px;
   text-align: center;
   display: flex;
@@ -150,18 +151,20 @@ border-radius: 50%;
 
 .section-light{
   padding: 70px;
-  background-color: #ebe6e6e1;
+  background-color:  #F9FAFB;
+ 
 }
 
 /* Services */
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, auto);   /* 2 rows */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto);  
   gap: 20px;
-  background-color: #ebe6e6e1;
+  background-color: #F9FAFB;;
   padding: 0px  200px;
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 
@@ -236,7 +239,7 @@ border-radius: 50%;
 
 .approach-card a {
   font-size: 14px;
-  color: #7b3fe4;
+  color: #EE1E7E;
   text-decoration: none;
   font-weight: 500;
 }
@@ -256,12 +259,12 @@ border-radius: 50%;
 }
 
 .about-mission{
-  background-color: #ebe6e6e1;
+  background-color:  #ebe6e6e1;
   padding: 70px;
 }
 
 .mission h6{
-  color: rgba(66, 253, 253, 0.904);
+  color: #EE1E7E;
 }
 
 .mission .WFE{
@@ -274,47 +277,86 @@ border-radius: 50%;
   margin-top: 50px;
 }
 
-.grid-layout{
-  background-color: #d1fdff;
-  padding: 50px 200px;
-  justify-content: center;
-  align-items: center;
+.commitment-section {
+  padding: 80px 4%;
+  background: #f8fafc;
 }
-.grid-layout h1{
+
+.section-title {
   text-align: center;
-  margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #1e293b;
 }
 
-.cards-grid {
+.commitment-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
-.card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+.commitment-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.commitment-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-.card h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: #333;
+.card-image {
+  width: 25%;
 }
 
-.card p {
-  font-size: 0.95rem;
-  color: #555;
+.card-content {
+  width: 75%;
 }
 
+
+
+
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #EE1E7E;
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .commitment-card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 25px;
+  }
+}
 
 .donors-section {
   padding: 40px 20px;
@@ -348,7 +390,7 @@ border-radius: 50%;
 .donor-links a {
   display: inline-block;
   padding: 8px 14px;
-  background-color: #7b3fe4;
+  background-color: #EE1E7E;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -367,7 +409,7 @@ border-radius: 50%;
   transition: background-color 0.2s;
 }
 
-/* 📱 Mobile adjustment */
+
 @media (max-width: 600px) {
   .donor-links {
     justify-content: center;
@@ -388,7 +430,7 @@ border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
   padding: 6px 12px;
-color: #7b3fe4;
+color: #EE1E7E;
 text-decoration: underline;
   border-radius: 6px;
   cursor: pointer;
@@ -460,7 +502,7 @@ text-decoration: underline;
 
 
 .social-links a {
-  color: #7b3fe4;
+  color: #EE1E7E;
   text-decoration: none;
   margin-right: 8px;
 }
@@ -515,13 +557,13 @@ text-decoration: underline;
 }
 
 .btn.primary {
-  background-color: #7c3aed;
+  background-color: #EE1E7E;
   color: #fff;
 }
 
 .btn.outline {
-  border: 2px solid #7c3aed;
-  color: #7c3aed;
+  border: 2px solid #EE1E7E;
+  color: #000;
 }
 
 .team-careers {
@@ -529,14 +571,14 @@ text-decoration: underline;
 }
 
 .team-careers a {
-  color: #7c3aed;
+  color: #EE1E7E;
   text-decoration: none;
 }
 
 
 
 .subscribe-section {
-  background-color: #1f2933;
+  background-color: #2f363d;
   padding: 80px 200px;
   color: #fff;
 }
@@ -622,7 +664,7 @@ text-decoration: underline;
   margin-top: 12px;
   width: 100%;
   padding: 10px;
-  background-color: #7c3aed;
+  background-color: #EE1E7E;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -690,7 +732,7 @@ text-decoration: underline;
   display: inline-block;
   margin-top: 16px;
   padding: 10px 14px;
-  background: #7c3aed;
+  background: #EE1E7E;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -699,7 +741,7 @@ text-decoration: underline;
 }
 
 .resource-card .btn:hover {
-  background: #6d28d9;
+  background: #EE1E7E;
 }
 
 
@@ -769,14 +811,10 @@ text-decoration: underline;
 }
 
 .footer-social a:hover {
-  color: #a855f7; /* WFE purple */
+  color: #EE1E7E;
 }
 
-/* 
-   RESPONSIVE DESIGN
- */
 
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
 
   .header {
@@ -831,7 +869,7 @@ text-decoration: underline;
   }
 }
 
-/* Mobile (max-width: 768px) */
+
 @media (max-width: 768px) {
 
   .header {
@@ -928,7 +966,7 @@ text-decoration: underline;
   }
 }
 
-/* Small Phones (max-width: 480px) */
+
 @media (max-width: 480px) {
 
   .hero-content h1 {
